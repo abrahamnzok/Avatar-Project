@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<opendata>
+	<request>http://www.data.rennes-metropole.fr/xml/?key=E5CM3VVBPGKGY2Y&amp;version=1.1&amp;cmd=getorganization</request>
+	<answer>
+		<status code="0" message="OK"/>
+		<data>
+			<organization>
+				<id>274</id>
+				<acronym/>
+				<name> Direction habitat social </name>
+				<description>Lieu d'enregistrement de la demande de logement social pour l'ensemble des bailleurs sociaux</description>
+				<minitel/>
+				<email>dhs@ville-rennes.fr</email>
+				<information>Métro Clémenceau.</information>
+				<web>metropole.rennes.fr</web>
+				<schedule>Lundi au vendredi, 9h à 12h30 et 13h30 à 17h. Fermé jeudi matin. Possibilité d'être reçu sur rendez-vous.</schedule>
+				<addresses>
+					<address>
+						<street>
+							<number>1</number>
+							<extension/>
+							<building/>
+							<name>Place de la Communauté</name>
+						</street>
+						<zipcode>35031</zipcode>
+						<pobox>CS 63126</pobox>
+						<city>Rennes</city>
+						<district>Bréquigny</district>
+						<phone>02 23 62 16 30</phone>
+						<phone/>
+						<fax/>
+						<latitude>48,09285128</latitude>
+						<longitude>-1,675734069</longitude>
+						<accessibility>2</accessibility>
+					</address>
+				</addresses>
+				<theme>195,544</theme>
+				<theme>195,544</theme>
+				<theme>1373,1437</theme>
+			</organization>
+			<organization>
+				<id>1987</id>
+				<acronym/>
+				<name>08AV1S</name>
+				<description>Sculpture d'Alain Clément, 2008, acier peint.
+Alain Clément, né à Neuilly-sur-Seine (92), 1941. Vit et travaille à Nîmes et Paris.</description>
+				<minitel/>
+				<email/>
+				<information/>
+				<web>www.metropole.rennes.fr</web>
+				<schedule/>
+				<addresses>
+					<address>
+						<street>
+							<number/>
+							<extension/>
+							<building/>
+							<name>Square Simone Morand</name>
+						</street>
+						<zipcode>35000</zipcode>
+						<pobox/>
+						<city>Rennes</city>
+						<district>Bourg-L'Evêque - La Touche - Moulin du Comte</district>
+						<phone/>
+						<phone/>
+						<fax/>
+						<latitude>48.1089334179</latitude>
+						<longitude>-1.7075375937</longitude>
+						<accessibility>1</accessibility>
+					</address>
+				</addresses>
+				<theme>190,1267</theme>
+			</organization>
+			<organization>
+				<id>1699</id>
+				<acronym/>
+				<name>08Victimes</name>
+				<description>Ecoute, information et orientation des victimes de toute violence.</description>
+				<minitel/>
+				<email/>
+				<information/>
+				<web>www.inavem.org</web>
+				<schedule>Référence uniquement téléphonique, 9h à 21h, 7jr/7.</schedule>
+				<addresses>
+					<address>
+						<street>
+							<number/>
+							<extension/>
+							<building/>
+							<name/>
+						</street>
+						<zipcode>35000</zipcode>
+						<pobox/>
+						<city>Rennes</city>
+						<district/>
+						<phone>08 84 28 46 37</phone>
+						<phone/>
+						<fax/>
+						<latitude>0.00000000</latitude>
+						<longitude/>
+						<accessibility>4</accessibility>
+					</address>
+				</addresses>
+				<theme>193,644</theme>
+				<receptiontype>2</receptiontype>
+			</organization>
+		</data>
+	</answer>
+</opendata>

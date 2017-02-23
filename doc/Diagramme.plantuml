@@ -1,0 +1,102 @@
+@startuml
+
+skinparam class {
+	BackgroundColor PaleGreen
+	ArrowColor red
+	BorderColor grey
+}
+
+skinparam backgroundcolor AntiqueWhite/Gold
+skinparam stereotypeCBackgroundColor YellowGreen
+
+package "Avatar" <<Node>> #2CC5C5{
+ class Avatar
+ languesutilisateur --> Avatar
+ Avatar --> GestionnaireReponsesMultiples
+}
+
+
+
+class Avatar << (O,#FF4500)>> {
+	+ reponse(String) : List[String]
+}
+
+class languesutilisateur {
+	languecourante
+	langueDetecter
+	+ ChangementDeLangue(String): List[String]
+	+ langueUtiliDetecter(String): Boolean 
+}
+
+class GestionnaireReponsesMultiples {
+	choixPossible:List[String]  
+  	listMotsCle:List[String] 
+	+ getListeMotsCleFromLastRequest():List[String]
+	+ getChoixPossiblesFromLastRequest():List[String]
+	+ getChoixMotCle(choix:Int):String
+	+ getChoixAddress(choix:Int):String
+	+ getNombreChoixPossibles():Int
+	+ contiensUnNombre(s:String): Boolean
+	+ recupererPremierNombre(s:String):Int 
+}
+
+
+package  analyse_phrase <<Node>> #2CC5C5 {
+class Analyse_class
+}
+
+
+
+class Analyse_class {
++ analyse(String) : List[String]
+}
+
+
+
+package Base_De_Donnee <<Node>> #2CC5C5{
+class ContenuBaseDeDonnee
+Avatar --> Langues
+}
+
+class ContenuBaseDeDonnee << (O,#FF4500)>> {
+  + contient (s:List[String]) : Boolean
+  + getKeyword: List[String]
+  + getKeywordPolitesse : List[String]
+  + extraitAdresse (s:String) : String
+  + envoieCle ( s:String) : String
+  + envoieCle2 ( s:String) : String
+  + envoieReponse (s:List[String]) : List [String]
+  + envoieReponse2 (s:List[String]) : List [String]
+  + validationRep (s:List[String]) : Boolean
+}
+
+package fautes <<Node>> #2CC5C5{
+class Tolerance_Faute
+Hamming --> Tolerance_Faute
+}
+
+
+
+class Tolerance_Faute{
++ corrigerFautes(String) : String
+}
+
+class Hamming{
++ distanceHamming(String,String) : int
+}
+
+interface GUI{
+
+}
+
+Avatar -left-> ContenuBaseDeDonnee
+Avatar --> Analyse_class
+Avatar --> Tolerance_Faute
+languesutilisateur -left-> Langues
+Analyse_class --> ContenuBaseDeDonnee
+Analyse_class --> Tolerance_Faute
+Tolerance_Faute --> ContenuBaseDeDonnee
+Tolerance_Faute -right-> Langues
+GUI --> Avatar 
+
+@enduml
